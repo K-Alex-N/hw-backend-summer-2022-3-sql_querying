@@ -21,7 +21,7 @@ LIMIT 5;
 # количество упоминаний которых меньше 50
 # В ответе должно быть 2 колонки [flight_no, count]
 TASK_2_QUERY = """
-SELECT flight_no, COUNT(1) AS count
+SELECT flight_no, COUNT(1) AS count  
 FROM flights
 GROUP BY flight_no
 HAVING COUNT(1)<50
